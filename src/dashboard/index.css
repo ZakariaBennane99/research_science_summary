@@ -1,0 +1,212 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+.left-hand-section {
+    height: 100vh;
+    width: 23%;
+    border-right: 3px solid #E8EBEE;
+}
+
+.left-hand-section .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 35%;
+    border-bottom: 3px solid #E8EBEE;
+}
+
+.left-hand-section .profile-info img {
+    width: 30%;
+}
+
+.left-hand-section .profile-info p {
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin-top: 0.6rem;
+}
+
+.left-hand-section .profile-info h1 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-top: 0.4rem;
+}
+
+.left-hand-section .profile-info h2 {
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    background-color: #ADB5BD;
+    color: white;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.left-hand-menu img {
+    width: 8.5%;
+    margin-right: 0.6rem;
+}
+
+.left-hand-menu p {
+    cursor: pointer;
+    display: flex;
+    justify-content:flex-start;
+    padding: 1rem 0px 1rem 22%;
+    font-family: 'Ubuntu';
+    font-weight: 300;
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    transition: all 0.3s;
+}
+
+.left-hand-menu p:last-child {
+    color: #E60000;
+}
+
+.left-hand-menu p:hover {
+    background-color: #E8EBEE;
+}
+
+.main-section {
+    width: 32%;
+    margin: 1rem 0.1rem;
+}
+
+.main-section p img {
+    width: 10%;
+    margin-right: 8px;
+}
+
+.main-section h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 1.1rem;
+    margin-top: 0.9rem;
+}
+
+.main-section #write {
+    font-family: 'Montserrat';
+    font-weight: 600;
+    font-size: 1.3rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 0.3s;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.main-section #write:hover {
+    background-color: #DEE2E6;
+}
+
+.articles {
+    height: 75%;
+    border: 3px solid #E8EBEE;
+    border-radius: 12px;
+    margin-top: .7rem;
+}
+
+.articles .three-dots {
+    padding-left: 0.2rem;
+}
+
+.articles > div:not(:last-child) {
+    margin-top: 0px;
+    padding: 0.2rem;
+    cursor: pointer;
+    border-bottom: 3px solid #E8EBEE;
+    transition: all 0.3s;
+    font-family: 'Montserrat';
+    font-size: .9rem;
+    color: #6C757D;
+    line-height: 1.3;
+}
+
+.articles > div > p {
+    margin-right: 0px;
+    font-size: 0.6rem;
+    font-weight: 600;
+}
+
+.articles > div:first-child {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.articles > div:hover:not(:last-child) {
+    background-color: #E8EBEE;
+}
+
+.in-review {
+    width: 32%;
+    background-color: #E60000;
+}
+
+
+@media screen and (max-width: 2024px) and (min-width: 980px) {
+    .dashboard-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 2025px) {
+    .dashboard-section {
+        width: 2024px;
+        height: 100vh;
+    }
+}
